@@ -12,3 +12,8 @@ PRODUCT_NAME := acme_one
 PRODUCT_DEVICE := hikey960
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on acme_one
+
+
+PRODUCT_PACKAGES += \
+	vendor.acme.one.stringy@1.0-service \
+	stringycl
