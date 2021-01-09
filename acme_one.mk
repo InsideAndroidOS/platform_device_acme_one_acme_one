@@ -16,4 +16,8 @@ PRODUCT_MODEL := AOSP on acme_one
 PRODUCT_PACKAGES += \
 	PermsSampleHost \
 	PermsSampleClient
+	libacmeproximityshim \
+	vendor.acme.one.aproximity@1.0-service \
+	aproximitycl \
+	AproximityClient
 
