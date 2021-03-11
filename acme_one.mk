@@ -14,10 +14,27 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on acme_one
 
 PRODUCT_PACKAGES += \
-	PermsSampleHost \
-	PermsSampleClient
 	libacmeproximityshim \
+	proximityhal.default \
+	libacmeproximityjni \
+	acmesimpledaemon \
+	acmenativedaemon \
+	PermsSampleHost \
+	PermsSampleClient \
+	proximityd \
 	vendor.acme.one.aproximity@1.0-service \
 	aproximitycl \
 	AproximityClient
+
+PRODUCT_CHARACTERISTICS := tablet
+
+BOARD_SEPOLICY_DIRS += \
+	device/acme/one/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+	file_contexts \
+	hwservice_contexts
+
+# Extend the device manifest file (for HIDL)
+DEVICE_MANIFEST_FILE += device/acme/one/manifest.xml
 
