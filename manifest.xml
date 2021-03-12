@@ -3,9 +3,9 @@
         <name>vendor.acme.one.aproximity</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
-            <interface>
+        <interface>
             <name>IAproximity</name>
-        <instance>default</instance>
+            <instance>default</instance>
         </interface>
     </hal>
 </manifest>

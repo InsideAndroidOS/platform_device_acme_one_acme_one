@@ -29,12 +29,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_CHARACTERISTICS := tablet
 
 BOARD_SEPOLICY_DIRS += \
-	device/acme/one/sepolicy
+	device/acme/one/acme_one/sepolicy
 
 BOARD_SEPOLICY_UNION += \
 	file_contexts \
 	hwservice_contexts
-
-# Extend the device manifest file (for HIDL)
-DEVICE_MANIFEST_FILE += device/acme/one/manifest.xml
-
